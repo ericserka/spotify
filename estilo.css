@@ -1,0 +1,15 @@
+/* layout */
+
+.img-logo {
+    height: 40px;
+    width: 132px;
+    display: block; /* como o span é inline, height e width não fariam efeito; por isso colocamos block */
+    background: url('imagens/spotify.svg') no-repeat; /* no-repeat serve para a imagem não se repetir caso ache espaço suficiente */
+    background-size: contain; /* serve para definir o tamanho de uma imagem de fundo; o contain quer dizer que o background-size será igual aos valores da div (40px e 132px no exemplo) */
+    color: transparent; /* texto é mantido apenas por motivos de acessibilidade, mas invisível aos usuários comuns */
+}
+
+nav.navbar-transparente {
+    background: rgba(52, 58, 64, 0.6);
+}
+/* tipografia */
