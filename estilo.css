@@ -9,7 +9,16 @@
     color: transparent; /* texto é mantido apenas por motivos de acessibilidade, mas invisível aos usuários comuns */
 }
 
-nav.navbar-transparente {
+nav.navbar-transparente { /* aqui, colocamos o ponto sem espaço pois estamos formatando a classe nav-bar transparente apenas nos elementos nav */
     background: rgba(52, 58, 64, 0.6);
+    padding: 15px 0px; /* aumenta um pouco o tamano do menu */
+}
+
+.navbar .navbar-nav .nav-item>a { /* hierarquia das classes; o sinal de maior significa que vai formatar os elementos a que são filhos diretos do elemento das classes ".navbar .navbar-nav .nav-item", seguindo a hierarquia esse elemento seria um li (basta olhar o código HTML) */
+    color: white;
+}
+
+.navbar .navbar-nav .nav-item>a:hover {
+    color: #9bf0e1;
 }
 /* tipografia */
