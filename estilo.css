@@ -1,5 +1,17 @@
 /* layout */
 
+body {
+    background: url('imagens/capa.png'), url('imagens/ruido.png'), linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body, .capa {
+    height: 100%;
+}
+
+/* barra de navegacao */
+
 .img-logo {
     height: 40px;
     width: 132px;
@@ -21,4 +33,57 @@ nav.navbar-transparente { /* aqui, colocamos o ponto sem espaço pois estamos fo
 .navbar .navbar-nav .nav-item>a:hover {
     color: #9bf0e1;
 }
+
+/* capa */
+
+.capa {
+    display: table; /* útil para centralizar verticalmente */
+    width: 100%; /* como o display table ocupa o espaço apenas onde tem conteúdo (semelhante ao display inline), preenchemos o espaço vazio definindo a largura como 100% */
+}
+
+.texto-capa {
+    text-align: center; /* centraliza horizontalmente */
+    color: white;
+    display: table-cell; /* útil para centralizar verticalmente; como essa div tá dentro da div "capa" o display é table-cell; a div principal é a que recebe display table */
+    vertical-align: middle; /* útil para centralizar verticalmente */
+}
+
+/* Botões */
+
+.btn-custom {
+    color: white;
+    border-radius:500px;
+    -webkit-border-radius: 500px; /* navegadores antigos */
+    -moz-border-radius: 500px; /* navegadores antigos */
+    padding: 10px 35px;
+    margin: 0px 15px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo {
+    background: #7c25f8;
+}
+
+.btn-roxo:hover {
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco {
+    border: 2px solid white;
+}
+
+.btn-branco:hover {
+    background: white;
+    color: black;
+}
+
 /* tipografia */
+
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -0.05em; /* valores negativos juntam mais as letras enquanto valores positivos separam mais*/
+    margin-bottom: 50px;
+}
