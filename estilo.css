@@ -4,6 +4,7 @@ body {
     background: url('imagens/capa.png'), url('imagens/ruido.png'), linear-gradient(50deg, #ff4169, #7c26f8);
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden; /* esconde a barra de rolagem horizontal */
 }
 
 html, body, .capa {
@@ -79,11 +80,58 @@ nav.navbar-transparente { /* aqui, colocamos o ponto sem espaço pois estamos fo
     color: black;
 }
 
+/* sessao servicos */
+
+#servicos {
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.albuns {
+    padding: 10px 0;
+}
+
+/* sessao recursos */
+
+#recursos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+#recursos h3 {
+    color: #9bf0e1;
+}
+
+.rotacionar {
+    transform: rotate(30deg); /* rotaciona o elemento em 30 graus */
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    padding-left: 80px;
+}
+
 /* tipografia */
 
 h1 {
     font-size: 100px;
     font-weight: 900;
     letter-spacing: -0.05em; /* valores negativos juntam mais as letras enquanto valores positivos separam mais*/
-    margin-bottom: 50px;
+    margin-bottom: 50px; /* não deixa os botões tão colados no título principal do site (música para todos) */
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#servicos h2, #servicos h3 {
+    color: #7c25f8;
 }
