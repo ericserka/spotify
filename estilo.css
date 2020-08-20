@@ -27,11 +27,12 @@ nav.navbar-transparente { /* aqui, colocamos o ponto sem espaço pois estamos fo
     padding: 15px 0px; /* aumenta um pouco o tamano do menu */
 }
 
-.navbar .navbar-nav .nav-item>a { /* hierarquia das classes; o sinal de maior significa que vai formatar os elementos a que são filhos diretos do elemento das classes ".navbar .navbar-nav .nav-item", seguindo a hierarquia esse elemento seria um li (basta olhar o código HTML) */
+.navbar .navbar-nav .nav-item>a, #rodape ul>li>a { /* hierarquia das classes; o sinal de maior significa que vai formatar os elementos a que são filhos diretos do elemento das classes ".navbar .navbar-nav .nav-item", seguindo a hierarquia esse elemento seria um li (basta olhar o código HTML) */
     color: white;
+    text-decoration: none; /* tira o sublinhado do link */
 }
 
-.navbar .navbar-nav .nav-item>a:hover {
+.navbar .navbar-nav .nav-item>a:hover, #rodape ul>li>a:hover {
     color: #9bf0e1;
 }
 
@@ -111,6 +112,18 @@ nav.navbar-transparente { /* aqui, colocamos o ponto sem espaço pois estamos fo
     padding-left: 80px;
 }
 
+/* footer */
+#rodape {
+    background: black;
+    padding: 50px 0 20px 0;
+    position: relative; /* faz o footer ficar em cima da imagem do iphone */
+}
+
+.item-rede-social {
+    float: right;
+    margin: 0 10px;
+}
+
 /* tipografia */
 
 h1 {
@@ -134,4 +147,15 @@ h3 {
 
 #servicos h2, #servicos h3 {
     color: #7c25f8;
+}
+
+#rodape ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#rodape h4 {
+    color: #919496;
+    font-size: 12px;
+    text-transform: uppercase;
 }
