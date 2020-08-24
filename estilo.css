@@ -9,6 +9,7 @@ body {
 
 html, body, .capa {
     height: 100%;
+    overflow: auto;
 }
 
 /* barra de navegacao */
@@ -57,8 +58,6 @@ nav.navbar-transparente { /* aqui, colocamos o ponto sem espaço pois estamos fo
     border-radius:500px;
     -webkit-border-radius: 500px; /* navegadores antigos */
     -moz-border-radius: 500px; /* navegadores antigos */
-    padding: 10px 35px;
-    margin: 0px 15px;
     text-transform: uppercase;
     transition: background 0.4s, color 0.4s;
 }
@@ -127,7 +126,6 @@ nav.navbar-transparente { /* aqui, colocamos o ponto sem espaço pois estamos fo
 /* tipografia */
 
 h1 {
-    font-size: 100px;
     font-weight: 900;
     letter-spacing: -0.05em; /* valores negativos juntam mais as letras enquanto valores positivos separam mais*/
     margin-bottom: 50px; /* não deixa os botões tão colados no título principal do site (música para todos) */
@@ -158,4 +156,43 @@ h3 {
     color: #919496;
     font-size: 12px;
     text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
+
+/* dispositivos small */
+@media screen and (max-width: 767px ) {
+    .btn-custom {
+        padding: 10px 35px;
+        margin: 10px 15px;   
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .rotacionar {
+        visibility: hidden;
+    }
+}
+
+/* dispositivos medium */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+/* dispositivos large */
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+/* dispositivos extra large */
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 100px;
+    }
 }
